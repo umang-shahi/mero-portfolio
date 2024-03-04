@@ -3,7 +3,7 @@ import "./styles.scss";
 import { useNavigate } from "react-router-dom";
 import { Animate } from "react-simple-animate";
 import Typewriter from "./typewriter";
-import Img from "../../images/myphoto.jpg";
+import Img from "../../images/myphoto.jpg"
 
 function Home() {
   const navigate = useNavigate();
