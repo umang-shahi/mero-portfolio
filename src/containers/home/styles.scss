@@ -1,0 +1,111 @@
+.home {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  &__text-wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    h1 {
+      color: black;
+      margin: 0px;
+      font-weight: 500;
+      font-size: 6rem;
+      line-height: 8rem;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-top: 30px;
+      // margin-bottom: 10px;
+    }
+  }
+  &__contact-me {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    button {
+      cursor: pointer;
+      padding: 10px 70px;
+      font-size: 3rem;
+      background: transparent;
+      color: black;
+      border: 1px solid;
+      border-radius: 4px;
+      font-weight: 500;
+
+      &:hover {
+        background: white;
+        color: rgb(48, 136, 8);
+      }
+    }
+  }
+}
+
+.img{
+  display:block;
+  margin: 0 auto;
+  cursor: pointer;
+  border: 1px  #ddd;
+  // border-radius: 50%;
+  
+  img {
+      border-radius: 50%;
+
+  }
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(5, 172, 47, 0.5);
+  opacity: 0.8;
+}
+
+// @media only screen and (max-width: 550px) {
+//   .home__text-wrapper h1 {
+//     font-size: 3rem;
+//     line-height: 5rem;
+//   }
+// }
+
+// @media only screen and (min-width: 551px) and (max-width: 768px) {
+//   .home__text-wrapper h1 {
+//     font-size: 4rem;
+//     line-height: 6rem;
+//   }
+// }
+
+// @media only screen and (min-width: 769px) and (max-width: 990px) {
+//   .home__text-wrapper h1 {
+//     font-size: 4rem;
+//     line-height: 6rem;
+//   }
+// }
+
+
+@media only screen and (max-width: 768px) {
+  .home__text-wrapper h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+   
+  }
+  .home__contact-me button {
+    font-size: 1.5rem;
+    padding: 8px 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .home__text-wrapper h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  
+  }
+  .home__contact-me button {
+    font-size: 1.2rem;
+    padding: 6px 15px;
+  }
+}
